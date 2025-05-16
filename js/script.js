@@ -1,3 +1,5 @@
+console.log("Witam wszystkich developerów, którzy tutaj zaglądają!");
+
 let formElement = document.querySelector(".js-form");
 let amountElement = document.querySelector(".js-amount");
 let resultElement = document.querySelector(".js-result");
