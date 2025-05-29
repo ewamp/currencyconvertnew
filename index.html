@@ -14,40 +14,43 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/style.css" rel="stylesheet">
     <link href="css/container.css" rel="stylesheet">
+    <link href="css/background.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
 
 </head>
 
 <body>
-    <div class="container">
-        <form class="js-form">
-            <fieldset>
-                <legend>Kantor</legend>
+    <div class="background">
+        <div class="container">
+            <form class="js-form">
+                <fieldset>
+                    <legend>Kantor</legend>
+                    <p>
+                        <label>
+                            Wybierz walutę
+                            <select name="currency" class="js-currency">
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="GBP">GBP</option>
+                            </select>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                            Kwota w zł*<input type="number" min="0,01" step="any" placeholder="Wpisz kwotę w zł"
+                                class="js-amount">
+                        </label>
+                    </p>
+                </fieldset>
                 <p>
-                    <label>
-                        Wybierz walutę
-                        <select name="currency" class="js-currency">
-                            <option value="USD">USD</option>
-                            <option value="EUR">EUR</option>
-                            <option value="GBP">GBP</option>
-                        </select>
-                    </label>
+                    <button>Oblicz!</button>
                 </p>
+                <p class="js-result"></p>
 
-                <p>
-                    <label>
-                        Kwota w zł*<input type="number" min="0,01" step="any" placeholder="Wpisz kwotę w zł"
-                            class="js-amount">
-                    </label>
-                </p>
-            </fieldset>
-            <p>
-                <button>Oblicz!</button>
-            </p>
-            <p class="js-result"></p>
+            </form>
 
-        </form>
-
+        </div>
     </div>
 
 </body>

@@ -1,0 +1,13 @@
+.background {
+    max-width: 1000px;
+    max-height: 1000px;
+    margin: 0 auto;
+    background-image: url("../images/money.png");
+    background-color: #ccc;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    resize: both;
+    overflow: auto;
+
+}
